@@ -1,0 +1,1465 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- link css -->
+        <link rel="stylesheet" href="./style.css" />
+
+        <!-- tailwind link -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <title>Keke Cruise</title>
+    </head>
+    <body>
+        <div>
+            <!-- navbar -->
+            <nav
+                class="relative z-50 w-full h-[64px] lg:h-[80px] flex items-center bg-white"
+            >
+                <div class="container flex items-center">
+                    <!-- logo -->
+                    <div class="flex items-center">
+                        <a href="#">
+                            <img
+                                src="./images/Logo/Logo.png"
+                                alt="KekeCruise"
+                                class="w-[110px] lg:w-[140px] h-auto"
+                            />
+                        </a>
+                    </div>
+
+                    <!-- ul (desktop) -->
+                    <div class="hidden lg:block ml-auto mr-[45px]">
+                        <ul
+                            class="flex list-none items-center gap-8 xl:gap-[42px] liBorder"
+                        >
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-[15px] font-medium text-black hover:text-[#FFAA00] transition duration-300"
+                                >
+                                    Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-[15px] font-medium text-black hover:text-[#FFAA00] transition duration-300"
+                                >
+                                    About Us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-[15px] font-medium text-black hover:text-[#FFAA00] transition duration-300"
+                                >
+                                    Our Service
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    href="#"
+                                    class="text-[15px] font-medium text-black hover:text-[#FFAA00] transition duration-300"
+                                >
+                                    How it Works
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- button  -->
+                    <div class="hidden lg:block">
+                        <button
+                            type="button"
+                            class="px-[28px] py-[12px] bg-[#FFAA00] rounded-full text-[15px] font-medium text-black whitespace-nowrap hover:bg-black hover:text-white transition duration-300"
+                        >
+                            Join Our Community
+                        </button>
+                    </div>
+
+                    <!-- burger (mobile) -->
+                    <button
+                        id="menuBtn"
+                        type="button"
+                        aria-label="Open menu"
+                        aria-expanded="false"
+                        aria-controls="mobileMenu"
+                        class="ml-auto flex h-10 w-10 flex-col items-end justify-center gap-[6px] lg:hidden"
+                    >
+                        <span
+                            class="block h-[2px] w-6 rounded-full bg-black transition duration-300"
+                        ></span>
+                        <span
+                            class="block h-[2px] w-4 rounded-full bg-black transition duration-300"
+                        ></span>
+                    </button>
+                </div>
+
+                <!-- mobile menu -->
+                <div
+                    id="mobileMenu"
+                    class="hidden absolute inset-x-0 top-full border-t border-gray-100 bg-white shadow-lg lg:hidden"
+                >
+                    <div class="container flex flex-col gap-1 py-4">
+                        <a
+                            href="#"
+                            class="rounded-lg px-2 py-3 text-[15px] font-medium text-black hover:bg-[#F5F5F5] hover:text-[#FFAA00] transition duration-300"
+                        >
+                            Home
+                        </a>
+                        <a
+                            href="#"
+                            class="rounded-lg px-2 py-3 text-[15px] font-medium text-black hover:bg-[#F5F5F5] hover:text-[#FFAA00] transition duration-300"
+                        >
+                            About Us
+                        </a>
+                        <a
+                            href="#"
+                            class="rounded-lg px-2 py-3 text-[15px] font-medium text-black hover:bg-[#F5F5F5] hover:text-[#FFAA00] transition duration-300"
+                        >
+                            Our Service
+                        </a>
+                        <a
+                            href="#"
+                            class="rounded-lg px-2 py-3 text-[15px] font-medium text-black hover:bg-[#F5F5F5] hover:text-[#FFAA00] transition duration-300"
+                        >
+                            How it Works
+                        </a>
+
+                        <button
+                            type="button"
+                            class="mt-3 w-full py-[12px] bg-[#FFAA00] rounded-full text-[15px] font-medium text-black hover:bg-black hover:text-white transition duration-300"
+                        >
+                            Join Our Community
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero section  -->
+
+            <!-- one section -->
+            <section class="hero patterns w-full bg-[#F5F5F5]">
+                <div
+                    class="container flex flex-col items-center gap-12 pt-10 pb-12 sm:pt-16 lg:flex-row lg:justify-between lg:gap-8 lg:pt-24 lg:pb-28 xl:pt-32"
+                >
+                    <!-- left -->
+                    <div class="w-full lg:w-[540px] lg:shrink-0 xl:w-[619px]">
+                        <!-- text h2 -->
+                        <h2
+                            class="text-center text-[32px] font-bold leading-[125%] tracking-[0.1px] sm:text-5xl lg:text-left lg:text-[52px] xl:text-6xl xl:leading-[130%]"
+                        >
+                            FAST, AFFORDABLE, AND ECO-FRIENDLY DELIVERIES
+                        </h2>
+
+                        <!-- text p -->
+                        <p
+                            class="capitalize text-[15px] leading-[130%] tracking-[0.1px] text-[#333] pt-3 sm:text-center sm:text-base lg:text-left"
+                        >
+                            We deliver your needs swiftly while keeping the
+                            environment green.
+                        </p>
+
+                        <!-- two buttons -->
+                        <div
+                            class="flex flex-col gap-3 pt-8 sm:flex-row sm:justify-center sm:gap-4 lg:justify-start lg:pt-10"
+                        >
+                            <button
+                                type="button"
+                                class="w-full sm:w-auto px-[28px] py-[12px] bg-[#FFAA00] rounded-full text-[15px] font-medium text-black whitespace-nowrap hover:bg-black hover:text-white transition duration-300"
+                            >
+                                Join Our Community
+                            </button>
+                            <button
+                                type="button"
+                                class="w-full sm:w-auto px-[28px] py-[12px] border border-black rounded-full text-[15px] font-medium text-black hover:bg-[#FFAA00] hover:border-transparent whitespace-nowrap transition duration-300"
+                            >
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- right -->
+                    <div
+                        class="relative mx-auto h-[260px] w-full max-w-[340px] sm:h-[320px] sm:max-w-[440px] lg:mx-0 lg:max-w-[420px] xl:h-[400px] xl:max-w-[500px]"
+                    >
+                        <!-- LEFT CARD -->
+                        <div
+                            class="absolute left-0 top-8 z-10 h-[200px] w-[140px] -rotate-[12deg] overflow-hidden rounded-xl border-2 border-[#f5a900] bg-white shadow-md transition-transform duration-300 hover:-rotate-[15deg] sm:left-2 sm:top-10 sm:h-[250px] sm:w-[180px] xl:left-4 xl:top-14 xl:h-[300px] xl:w-[220px]"
+                        >
+                            <img
+                                src="./images/One section three images/left card.jpg"
+                                alt=""
+                                class="h-full w-full object-cover"
+                            />
+                        </div>
+
+                        <!-- CENTER CARD -->
+                        <div
+                            class="absolute left-1/2 top-0 z-30 h-[235px] w-[190px] -translate-x-1/2 overflow-hidden rounded-xl border-2 border-[#f5a900] bg-white shadow-xl transition-transform duration-300 hover:scale-[1.02] sm:h-[290px] sm:w-[230px] xl:h-[350px] xl:w-[280px]"
+                        >
+                            <img
+                                src="./images/One section three images/center card.jpg"
+                                alt=""
+                                class="h-full w-full object-cover"
+                            />
+                        </div>
+
+                        <!-- RIGHT CARD -->
+                        <div
+                            class="absolute right-0 top-8 z-10 h-[200px] w-[140px] rotate-[12deg] overflow-hidden rounded-xl border-2 border-[#f5a900] bg-white shadow-md transition-transform duration-300 hover:rotate-[15deg] sm:right-2 sm:top-10 sm:h-[250px] sm:w-[180px] xl:right-4 xl:top-14 xl:h-[300px] xl:w-[220px]"
+                        >
+                            <img
+                                src="./images/One section three images/rigt card.jpg"
+                                alt=""
+                                class="h-full w-full object-cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Newsletter Section -->
+            <div class="relative">
+                <!-- kartaning yuqori yarmi kulrang fon ustida turadi -->
+                <div
+                    class="absolute inset-x-0 top-0 h-1/2 bg-[#F5F5F5]"
+                ></div>
+
+                <div class="container relative">
+                    <div
+                        class="newsLetterHero w-full flex flex-col items-center gap-6 bg-[#FFAA00] rounded-2xl border-2 border-dashed border-black/10 px-5 py-8 sm:px-8 lg:flex-row lg:justify-between lg:px-10"
+                    >
+                        <!-- left text -->
+                        <div
+                            class="max-w-[420px] text-center text-[28px] font-bold leading-[125%] text-black sm:text-[32px] lg:w-[314px] lg:max-w-none lg:shrink-0 lg:text-left lg:text-2xl lg:leading-[130%]"
+                        >
+                            Be Part Of The Future Of Eco-Friendly Deliveries!
+                        </div>
+
+                        <!-- email input + button -->
+                        <div
+                            class="flex w-full flex-col gap-4 md:flex-row md:items-center lg:flex-1 lg:gap-6"
+                        >
+                            <input
+                                type="email"
+                                placeholder="Enter your Email Address"
+                                class="w-full h-[50px] md:flex-1 rounded-full bg-white px-6 text-[14px] text-gray-500 placeholder-gray-400 outline-none focus:ring-2 focus:ring-black/20 md:h-[60px] md:text-base lg:h-[70px]"
+                            />
+
+                            <button
+                                type="button"
+                                class="w-full shrink-0 whitespace-nowrap rounded-full bg-black px-8 py-4 text-[15px] font-medium text-white transition duration-300 hover:bg-white hover:text-black md:w-auto"
+                            >
+                                Join Our Waitlist
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- two section -->
+            <section class="container py-16 lg:py-24">
+                <!-- TOP -->
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold sm:text-4xl">
+                        <span>Our</span>
+                        <span class="text-[#FEAE00]">Service</span>
+                    </h2>
+
+                    <p
+                        class="mt-5 max-w-[600px] mx-auto text-[14px] leading-relaxed text-gray-600"
+                    >
+                        Transforming urban mobility with eco-friendly, efficient
+                        delivery solutions that prioritize speed,
+                        sustainability, and customer satisfaction.
+                    </p>
+                </div>
+
+                <!-- BOTTOM / SERVICES -->
+                <div
+                    class="max-w-[1050px] mx-auto mt-12 grid grid-cols-1 gap-6 md:grid-cols-3 lg:mt-20 lg:gap-8"
+                >
+                    <!-- 1 -->
+                    <div
+                        class="flex flex-col items-center text-center rounded-2xl border border-gray-100 bg-white px-6 py-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg lg:px-8 lg:py-10"
+                    >
+                        <div
+                            class="w-20 h-20 flex items-center justify-center rounded-full bg-[#FFF6E5]"
+                        >
+                            <img
+                                src="./images/two section/one image.png"
+                                alt="Food Delivery"
+                                class="w-12 h-12 object-contain"
+                            />
+                        </div>
+
+                        <h3 class="mt-6 text-lg font-bold lg:text-xl">
+                            Food Delivery
+                        </h3>
+
+                        <p
+                            class="mt-3 text-sm leading-relaxed text-gray-600"
+                        >
+                            Partnered restaurants and local vendors
+                        </p>
+                    </div>
+
+                    <!-- 2 -->
+                    <div
+                        class="flex flex-col items-center text-center rounded-2xl border border-gray-100 bg-white px-6 py-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg lg:px-8 lg:py-10"
+                    >
+                        <div
+                            class="w-20 h-20 flex items-center justify-center rounded-full bg-[#FFF6E5]"
+                        >
+                            <img
+                                src="./images/two section/two image.png"
+                                alt="Customized Service Delivery"
+                                class="w-12 h-12 object-contain"
+                            />
+                        </div>
+
+                        <h3 class="mt-6 text-lg font-bold lg:text-xl">
+                            Customized Service Delivery
+                        </h3>
+
+                        <p
+                            class="mt-3 text-sm leading-relaxed text-gray-600"
+                        >
+                            Get your items delivered quickly
+                        </p>
+                    </div>
+
+                    <!-- 3 -->
+                    <div
+                        class="flex flex-col items-center text-center rounded-2xl border border-gray-100 bg-white px-6 py-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-lg lg:px-8 lg:py-10"
+                    >
+                        <div
+                            class="w-20 h-20 flex items-center justify-center rounded-full bg-[#FFF6E5]"
+                        >
+                            <img
+                                src="./images/two section/three image.png"
+                                alt="Logistics Services"
+                                class="w-12 h-12 object-contain"
+                            />
+                        </div>
+
+                        <h3 class="mt-6 text-lg font-bold lg:text-xl">
+                            Logistics Services
+                        </h3>
+
+                        <p
+                            class="mt-3 text-sm leading-relaxed text-gray-600"
+                        >
+                            Send packages safely & affordably
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- three section -->
+
+            <section class="w-full bg-[#F7F7F7] py-16 lg:py-24">
+                <div class="container">
+                    <div class="text-center">
+                        <h2
+                            class="text-3xl font-bold leading-tight sm:text-[38px]"
+                        >
+                            How
+                            <span class="text-[#FFAA00]">KekeCruise</span>
+                            Works!
+                        </h2>
+
+                        <p
+                            class="max-w-[650px] mx-auto mt-4 text-[14px] leading-[20px] text-[#333]"
+                        >
+                            Booking A Delivery With KekeCruise Is Quick And
+                            Hassle-Free. From Placing An Order To Receiving It
+                            At Your Doorstep, We Ensure A Smooth And Sustainable
+                            Experience Every Step Of The Way.
+                        </p>
+                    </div>
+
+                    <!-- telefonda: rasm tepada, qadamlar 1-2-3-4 tartibda; desktopda: rasm o'rtada -->
+                    <div
+                        class="max-w-[900px] mx-auto mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-[1fr_auto_1fr] lg:grid-rows-2 lg:gap-x-8 lg:gap-y-20"
+                    >
+                        <!-- image -->
+                        <div
+                            class="flex items-center justify-center sm:col-span-2 lg:col-span-1 lg:col-start-2 lg:row-span-2 lg:row-start-1"
+                        >
+                            <img
+                                src="./images/three section/bicycle-girl-round.png"
+                                alt="Delivery Rider"
+                                class="w-[280px] h-auto object-contain sm:w-[340px] lg:w-[380px] xl:w-[420px]"
+                            />
+                        </div>
+
+                        <!-- 1 -->
+                        <div
+                            class="text-center lg:col-start-1 lg:row-start-1 lg:self-end lg:text-right"
+                        >
+                            <div
+                                class="mb-4 flex justify-center lg:justify-end"
+                            >
+                                <div
+                                    class="w-[52px] h-[52px] flex items-center justify-center relative"
+                                >
+                                    <div
+                                        class="absolute inset-0 rounded-full border-[5px] border-black"
+                                    ></div>
+                                    <div
+                                        class="w-[42px] h-[22px] absolute bottom-[-1px] left-[3px] rounded-b-full border-b-[5px] border-[#FFAA00]"
+                                    ></div>
+                                    <span
+                                        class="text-[24px] font-bold relative z-10"
+                                    >
+                                        1
+                                    </span>
+                                </div>
+                            </div>
+
+                            <h3 class="text-[20px] font-bold">
+                                Place Your Order
+                            </h3>
+
+                            <p
+                                class="mx-auto mt-2 max-w-[300px] text-[13px] leading-[18px] text-[#444] lg:mx-0 lg:max-w-none lg:text-[12px] lg:leading-[16px]"
+                            >
+                                Easily book a delivery via WhatsApp— whether
+                                it’s food, a tailored service, or logistics.
+                            </p>
+                        </div>
+
+                        <!-- 2 -->
+                        <div
+                            class="text-center lg:col-start-3 lg:row-start-1 lg:self-end lg:text-left"
+                        >
+                            <div
+                                class="mb-4 flex justify-center lg:justify-start"
+                            >
+                                <div
+                                    class="w-[52px] h-[52px] flex items-center justify-center relative"
+                                >
+                                    <div
+                                        class="absolute inset-0 rounded-full border-[5px] border-black"
+                                    ></div>
+                                    <div
+                                        class="w-[42px] h-[22px] absolute bottom-[-1px] left-[3px] rounded-b-full border-b-[5px] border-[#FFAA00]"
+                                    ></div>
+                                    <span
+                                        class="text-[24px] font-bold relative z-10"
+                                    >
+                                        2
+                                    </span>
+                                </div>
+                            </div>
+
+                            <h3 class="text-[20px] font-bold">
+                                We Assign A Rider
+                            </h3>
+
+                            <p
+                                class="mx-auto mt-2 max-w-[300px] text-[13px] leading-[18px] text-[#444] lg:mx-0 lg:max-w-none lg:text-[12px] lg:leading-[16px]"
+                            >
+                                A nearby rider picks up your request and gets
+                                moving immediately.
+                            </p>
+                        </div>
+
+                        <!-- 3 -->
+                        <div
+                            class="text-center lg:col-start-1 lg:row-start-2 lg:self-start lg:text-right"
+                        >
+                            <div
+                                class="mb-4 flex justify-center lg:justify-end"
+                            >
+                                <div
+                                    class="w-[52px] h-[52px] flex items-center justify-center relative"
+                                >
+                                    <div
+                                        class="absolute inset-0 rounded-full border-[5px] border-black"
+                                    ></div>
+                                    <div
+                                        class="w-[42px] h-[22px] absolute bottom-[-1px] left-[3px] rounded-b-full border-b-[5px] border-[#FFAA00]"
+                                    ></div>
+                                    <span
+                                        class="text-[24px] font-bold relative z-10"
+                                    >
+                                        3
+                                    </span>
+                                </div>
+                            </div>
+
+                            <h3 class="text-[20px] font-bold">
+                                Track & Stay Updated
+                            </h3>
+
+                            <p
+                                class="mx-auto mt-2 max-w-[300px] text-[13px] leading-[18px] text-[#444] lg:mx-0 lg:max-w-none lg:text-[12px] lg:leading-[16px]"
+                            >
+                                Get real-time updates on your delivery status
+                                for peace of mind.
+                            </p>
+                        </div>
+
+                        <!-- 4 -->
+                        <div
+                            class="text-center lg:col-start-3 lg:row-start-2 lg:self-start lg:text-left"
+                        >
+                            <div
+                                class="mb-4 flex justify-center lg:justify-start"
+                            >
+                                <div
+                                    class="w-[52px] h-[52px] flex items-center justify-center relative"
+                                >
+                                    <div
+                                        class="absolute inset-0 rounded-full border-[5px] border-black"
+                                    ></div>
+                                    <div
+                                        class="w-[42px] h-[22px] absolute bottom-[-1px] left-[3px] rounded-b-full border-b-[5px] border-[#FFAA00]"
+                                    ></div>
+                                    <span
+                                        class="text-[24px] font-bold relative z-10"
+                                    >
+                                        4
+                                    </span>
+                                </div>
+                            </div>
+
+                            <h3 class="text-[20px] font-bold">
+                                Receive With Ease
+                            </h3>
+
+                            <p
+                                class="mx-auto mt-2 max-w-[300px] text-[13px] leading-[18px] text-[#444] lg:mx-0 lg:max-w-none lg:text-[12px] lg:leading-[16px]"
+                            >
+                                Your order arrives quickly, safely, and at an
+                                affordable rate.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- four section -->
+            <section class="whyChoose w-full py-16 lg:py-24">
+                <div class="container relative z-10">
+                    <!-- TOP -->
+                    <div class="text-center">
+                        <h2 class="text-3xl font-bold sm:text-4xl">
+                            Why Choose
+                            <span class="text-[#FFAA00]">KekeCruise</span>?
+                        </h2>
+
+                        <p
+                            class="mt-4 max-w-[560px] mx-auto text-[14px] leading-relaxed text-gray-700"
+                        >
+                            Reliable, Affordable, And Eco-Friendly. We Deliver
+                            Fast While Keeping The Planet Clean.
+                        </p>
+                    </div>
+
+                    <!-- FEATURES -->
+                    <div
+                        class="mt-12 grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-8 lg:mt-16 lg:grid-cols-4"
+                    >
+                        <!-- 1 -->
+                        <div class="flex flex-col items-center text-center">
+                            <div
+                                class="w-14 h-14 flex items-center justify-center"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="#FFAA00"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-9 h-9"
+                                >
+                                    <rect
+                                        x="3"
+                                        y="6"
+                                        width="18"
+                                        height="13"
+                                        rx="2.5"
+                                    />
+                                    <path d="M3 9h18" />
+                                    <circle
+                                        cx="16.5"
+                                        cy="13.5"
+                                        r="1.2"
+                                        fill="#FFAA00"
+                                        stroke="none"
+                                    />
+                                </svg>
+                            </div>
+
+                            <h3 class="mt-4 text-lg font-bold">Affordable</h3>
+
+                            <p
+                                class="mt-2 max-w-[260px] text-[13px] leading-relaxed text-gray-600"
+                            >
+                                Enjoy fast, reliable, and budget-friendly
+                                deliveries.
+                            </p>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="flex flex-col items-center text-center">
+                            <div
+                                class="w-14 h-14 flex items-center justify-center"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="#FFAA00"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-9 h-9"
+                                >
+                                    <circle cx="12" cy="12" r="9" />
+                                    <path
+                                        d="m8.5 12 2.5 2.5 4.5-5"
+                                        stroke="#111"
+                                    />
+                                </svg>
+                            </div>
+
+                            <h3 class="mt-4 text-lg font-bold">Convenient</h3>
+
+                            <p
+                                class="mt-2 max-w-[260px] text-[13px] leading-relaxed text-gray-600"
+                            >
+                                With WhatsApp booking process, KekeCruise makes
+                                ordering quick and easy.
+                            </p>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="flex flex-col items-center text-center">
+                            <div
+                                class="w-14 h-14 flex items-center justify-center"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="#FFAA00"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-9 h-9"
+                                >
+                                    <path
+                                        d="M20 4C10 4 4 10 4 19c0 0 0 1 0 1 9 0 16-6 16-16Z"
+                                    />
+                                    <path d="M4 20C9 15 14 10 18 6" />
+                                </svg>
+                            </div>
+
+                            <h3 class="mt-4 text-lg font-bold">Eco-Friendly</h3>
+
+                            <p
+                                class="mt-2 max-w-[260px] text-[13px] leading-relaxed text-gray-600"
+                            >
+                                We're building a greener future reducing carbon
+                                emissions.
+                            </p>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="flex flex-col items-center text-center">
+                            <div
+                                class="w-14 h-14 flex items-center justify-center"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="#FFAA00"
+                                    stroke-width="1.8"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="w-9 h-9"
+                                >
+                                    <path
+                                        d="M12 20s-7-4.5-7-9.5A3.5 3.5 0 0 1 12 8a3.5 3.5 0 0 1 7 2.5c0 5-7 9.5-7 9.5Z"
+                                    />
+                                    <path
+                                        d="M12 10v3M10.5 11.5h3"
+                                        stroke="#111"
+                                    />
+                                </svg>
+                            </div>
+
+                            <h3 class="mt-4 text-lg font-bold">Healthy</h3>
+
+                            <p
+                                class="mt-2 max-w-[260px] text-[13px] leading-relaxed text-gray-600"
+                            >
+                                We promote a healthy lifestyle while keeping the
+                                environment clean.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div
+                        class="newsLetterHero mt-14 w-full flex flex-col items-center gap-6 bg-[#FFAA00] rounded-2xl border-2 border-dashed border-black/10 px-5 py-8 sm:px-8 lg:mt-20 lg:flex-row lg:justify-between lg:px-10"
+                    >
+                        <!-- left text -->
+                        <div
+                            class="max-w-[420px] text-center text-[28px] font-bold leading-[125%] text-black sm:text-[32px] lg:w-[314px] lg:max-w-none lg:shrink-0 lg:text-left lg:text-2xl lg:leading-[130%]"
+                        >
+                            Be Part Of The Future Of Eco-Friendly Deliveries!
+                        </div>
+
+                        <!-- email input + button -->
+                        <div
+                            class="flex w-full flex-col gap-4 md:flex-row md:items-center lg:flex-1 lg:gap-6"
+                        >
+                            <input
+                                type="email"
+                                placeholder="Enter your Email Address"
+                                class="w-full h-[50px] md:flex-1 rounded-full bg-white px-6 text-[14px] text-gray-500 placeholder-gray-400 outline-none focus:ring-2 focus:ring-black/20 md:h-[60px] md:text-base lg:h-[70px]"
+                            />
+
+                            <button
+                                type="button"
+                                class="w-full shrink-0 whitespace-nowrap rounded-full bg-black px-8 py-4 text-[15px] font-medium text-white transition duration-300 hover:bg-white hover:text-black md:w-auto"
+                            >
+                                Join Our Waitlist
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- five section -->
+
+            <section class="w-full bg-white py-16 lg:py-24">
+                <div class="container">
+                    <!-- TOP -->
+                    <div class="text-center">
+                        <h2
+                            class="text-3xl font-bold leading-tight sm:text-[38px]"
+                        >
+                            What Our
+                            <span class="text-[#FFAA00]">Customers</span>
+                            Say
+                        </h2>
+
+                        <p
+                            class="max-w-[650px] mx-auto mt-4 text-[14px] leading-[20px] text-[#333]"
+                        >
+                            Our Riders And Customers Love KekeCruise For Its
+                            Speed, Affordability, And Eco-Conscious Approach.
+                            Here&rsquo;s What They Have To Say About Their
+                            Experience.
+                        </p>
+                    </div>
+
+                    <!-- CARDS (telefon/planshetda yonga suriladi, desktopda 3 ustun) -->
+                    <div
+                        id="reviewSlider"
+                        class="no-scrollbar mt-12 flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth lg:mt-16 lg:grid lg:grid-cols-3 lg:overflow-visible"
+                    >
+                        <!-- 1 -->
+                        <div
+                            class="flex w-[85%] shrink-0 snap-start flex-col rounded-[14px] bg-[#F5F5F5] px-6 pt-6 pb-8 sm:w-[calc(50%_-_12px)] sm:px-8 lg:w-auto"
+                        >
+                            <div
+                                class="text-center font-serif text-[70px] leading-none text-[#F7D5A0]"
+                            >
+                                &ldquo;
+                            </div>
+
+                            <p
+                                class="mt-2 text-center text-[13px] leading-[19px] text-[#333]"
+                            >
+                                I love that KekeCruise uses bicycles for
+                                deliveries. It&rsquo;s a smart way to keep the
+                                city clean while getting things done fast!
+                            </p>
+
+                            <div class="mt-auto pt-6">
+                                <div
+                                    class="h-px w-full bg-[#D9D9D9]"
+                                ></div>
+
+                                <div class="mt-5 flex items-center gap-3">
+                                    <img
+                                        src="./images/five sectio/people 1.jpg"
+                                        alt="Yussuf B."
+                                        class="w-[42px] h-[42px] rounded-full object-cover"
+                                    />
+
+                                    <div>
+                                        <h4 class="text-[14px] font-bold">
+                                            Yussuf B.
+                                        </h4>
+
+                                        <div
+                                            class="mt-1 flex items-center gap-1"
+                                        >
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-[#FFAA00]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-[#FFAA00]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-[#FFAA00]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-[#FFAA00]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-none stroke-[#B5B5B5] stroke-[1.5]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div
+                            class="flex w-[85%] shrink-0 snap-start flex-col rounded-[14px] bg-[#F5F5F5] px-6 pt-6 pb-8 sm:w-[calc(50%_-_12px)] sm:px-8 lg:w-auto"
+                        >
+                            <div
+                                class="text-center font-serif text-[70px] leading-none text-[#F7D5A0]"
+                            >
+                                &ldquo;
+                            </div>
+
+                            <p
+                                class="mt-2 text-center text-[13px] leading-[19px] text-[#333]"
+                            >
+                                Riding with KekeCruise felt empowering!
+                                It&rsquo;s more than just a delivery
+                                service&mdash;it&rsquo;s a movement toward a
+                                healthier and cleaner environment.
+                            </p>
+
+                            <div class="mt-auto pt-6">
+                                <div
+                                    class="h-px w-full bg-[#D9D9D9]"
+                                ></div>
+
+                                <div class="mt-5 flex items-center gap-3">
+                                    <img
+                                        src="./images/five sectio/people 2.jpg"
+                                        alt="Tunde A."
+                                        class="w-[42px] h-[42px] rounded-full object-cover"
+                                    />
+
+                                    <div>
+                                        <h4 class="text-[14px] font-bold">
+                                            Tunde A.
+                                        </h4>
+
+                                        <div
+                                            class="mt-1 flex items-center gap-1"
+                                        >
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-[#FFAA00]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-[#FFAA00]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-[#FFAA00]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-[#FFAA00]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-none stroke-[#B5B5B5] stroke-[1.5]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div
+                            class="flex w-[85%] shrink-0 snap-start flex-col rounded-[14px] bg-[#F5F5F5] px-6 pt-6 pb-8 sm:w-[calc(50%_-_12px)] sm:px-8 lg:w-auto"
+                        >
+                            <div
+                                class="text-center font-serif text-[70px] leading-none text-[#F7D5A0]"
+                            >
+                                &ldquo;
+                            </div>
+
+                            <p
+                                class="mt-2 text-center text-[13px] leading-[19px] text-[#333]"
+                            >
+                                It was inspiring to see KekeCruise in action!
+                                The test rides were smooth, and the vision
+                                behind this initiative is truly game-changing.
+                            </p>
+
+                            <div class="mt-auto pt-6">
+                                <div
+                                    class="h-px w-full bg-[#D9D9D9]"
+                                ></div>
+
+                                <div class="mt-5 flex items-center gap-3">
+                                    <img
+                                        src="./images/five sectio/people 3.jpg"
+                                        alt="Chuks G."
+                                        class="w-[42px] h-[42px] rounded-full object-cover"
+                                    />
+
+                                    <div>
+                                        <h4 class="text-[14px] font-bold">
+                                            Chuks G.
+                                        </h4>
+
+                                        <div
+                                            class="mt-1 flex items-center gap-1"
+                                        >
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-[#FFAA00]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-[#FFAA00]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-[#FFAA00]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-[#FFAA00]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                            <svg
+                                                class="w-[13px] h-[13px] fill-none stroke-[#B5B5B5] stroke-[1.5]"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.3 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8L12 2z"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DOTS -->
+                    <div
+                        id="reviewDots"
+                        class="mt-10 flex items-center justify-center gap-2 lg:mt-14"
+                    >
+                        <span
+                            class="h-[6px] w-[26px] rounded-full bg-[#FFAA00] transition-all duration-300"
+                        ></span>
+                        <span
+                            class="h-[6px] w-[6px] rounded-full bg-[#FFAA00]/40 transition-all duration-300"
+                        ></span>
+                        <span
+                            class="h-[6px] w-[6px] rounded-full bg-[#FFAA00]/40 transition-all duration-300"
+                        ></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- six section -->
+            <section class="w-full bg-[#F5F5F5] py-16 lg:py-24">
+                <div class="container">
+                    <!-- TOP -->
+                    <div class="text-center">
+                        <h2
+                            class="text-3xl font-bold leading-tight sm:text-4xl"
+                        >
+                            Frequently Asked
+                            <span class="text-[#FEAE00]">Questions</span>
+                        </h2>
+
+                        <p
+                            class="mx-auto mt-5 max-w-[600px] text-[14px] leading-relaxed text-gray-600"
+                        >
+                            Find quick answers to common questions about our
+                            services, pricing, and how KekeCruise works. Need
+                            more help? We’re just a message away!
+                        </p>
+                    </div>
+
+                    <!-- ACCORDION  -->
+                    <div
+                        id="faqList"
+                        class="mx-auto mt-10 flex max-w-[820px] flex-col gap-3 sm:gap-4 lg:mt-14"
+                    ></div>
+                </div>
+            </section>
+
+            <!-- seven section -->
+            <section class="partnerCta w-full py-16 lg:py-24">
+                <div class="container relative z-10">
+                    <div
+                        class="flex flex-col items-center justify-between gap-12 rounded-2xl py-6 sm:px-8 lg:flex-row lg:gap-8 lg:px-12 lg:py-14"
+                    >
+                        <div
+                            class="relative h-[270px] w-full max-w-[360px] shrink-0 sm:h-[300px] sm:max-w-[430px]"
+                        >
+                            <!-- LEFT CARD -->
+                            <div
+                                class="absolute left-1 top-6 z-10 h-[220px] w-[130px] -rotate-[10deg] overflow-hidden rounded-xl border-2 border-[#f5a900] bg-white shadow-lg transition-transform duration-300 hover:-rotate-[13deg] sm:left-2 sm:top-8 sm:h-[250px] sm:w-[150px]"
+                            >
+                                <img
+                                    src="./images/seven section/one image.jpg"
+                                    alt=""
+                                    class="h-full w-full object-cover"
+                                />
+                            </div>
+
+                            <!-- CENTER CARD -->
+                            <div
+                                class="absolute left-1/2 top-0 z-30 h-[260px] w-[150px] -translate-x-1/2 overflow-hidden rounded-xl border-2 border-[#f5a900] bg-white shadow-xl transition-transform duration-300 hover:scale-[1.03] sm:h-[290px] sm:w-[170px]"
+                            >
+                                <img
+                                    src="./images/seven section/two image.jpg"
+                                    alt=""
+                                    class="h-full w-full object-cover"
+                                />
+                            </div>
+
+                            <!-- RIGHT CARD -->
+                            <div
+                                class="absolute right-1 top-6 z-10 h-[220px] w-[130px] rotate-[10deg] overflow-hidden rounded-xl border-2 border-[#f5a900] bg-white shadow-lg transition-transform duration-300 hover:rotate-[13deg] sm:right-2 sm:top-8 sm:h-[250px] sm:w-[150px]"
+                            >
+                                <img
+                                    src="./images/seven section/three image.jpg"
+                                    alt=""
+                                    class="h-full w-full object-cover"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- RIGHT -->
+                        <div class="max-w-[480px] text-center lg:text-left">
+                            <h2
+                                class="text-3xl font-bold leading-[120%] sm:text-4xl lg:text-5xl"
+                            >
+                                Partner With Us (For Riders &amp; Businesses)
+                            </h2>
+
+                            <p
+                                class="mt-5 text-[15px] leading-relaxed text-gray-600"
+                            >
+                                Connect with fellow KekeCruise enthusiasts, get
+                                real-time updates, share your experiences, and
+                                be part of our green mobility revolution!
+                            </p>
+
+                            <button
+                                type="button"
+                                class="mt-8 rounded-full bg-[#FFAA00] px-9 py-4 text-[15px] font-medium text-black transition duration-300 hover:bg-black hover:text-white"
+                            >
+                                Join Our Community
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- eight section (blog) -->
+            <section class="w-full bg-white py-16 lg:py-24">
+                <div class="container">
+                    <!-- TOP -->
+                    <div class="text-center">
+                        <h2
+                            class="text-3xl font-bold leading-tight sm:text-4xl"
+                        >
+                            Our Latest
+                            <span class="text-[#FEAE00]">Blog</span>
+                        </h2>
+
+                        <p
+                            class="mx-auto mt-5 max-w-[600px] text-[14px] leading-relaxed text-gray-600"
+                        >
+                            Explore insights on sustainable living, efficient
+                            delivery services, and how KekeCruise is reshaping
+                            urban mobility.
+                        </p>
+                    </div>
+
+                    <!-- CARDS (yonga suriladi — JS orqali to'ldiriladi) -->
+                    <div
+                        id="blogSlider"
+                        class="no-scrollbar mt-12 flex cursor-grab snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-4 sm:gap-6 lg:mt-16"
+                    ></div>
+                </div>
+            </section>
+            <!-- nine section footer -->
+            <footer class="w-full bg-white pt-16 pb-10">
+                <div class="container">
+                    <!-- YELLOW CARD -->
+                    <div
+                        class="newsLetterHero relative overflow-hidden rounded-[20px] bg-[#FFAA00] px-6 py-12 sm:px-10 lg:px-[75px] lg:py-14"
+                    >
+                        <!-- xira velosiped  -->
+                        <img
+                            src="./images/three section/biycle girl.png"
+                            alt=""
+                            aria-hidden="true"
+                            loading="lazy"
+                            class="pointer-events-none absolute -left-[170px] top-1/2 h-[125%] w-auto max-w-none -translate-y-1/2 opacity-[0.12] grayscale mix-blend-multiply"
+                        />
+
+                        <div class="relative z-10">
+                            <!-- TOP -->
+                            <h2
+                                class="mx-auto max-w-[720px] text-center text-3xl font-bold leading-[125%] text-[#2B2B2B] sm:text-4xl lg:text-[44px]"
+                            >
+                                Be Part Of The Future Of Eco-Friendly
+                                Deliveries!
+                            </h2>
+
+                            <!-- email + button -->
+                            <div
+                                class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6"
+                            >
+                                <input
+                                    type="email"
+                                    placeholder="Enter your Email Address"
+                                    class="h-[50px] w-full sm:flex-1 rounded-full bg-[#F4F4F4] px-5 text-[14px] text-gray-700 placeholder-gray-500 outline-none focus:ring-2 focus:ring-black/20 sm:p-6"
+                                />
+
+                                <button
+                                    type="button"
+                                    class="h-[46px] shrink-0 whitespace-nowrap rounded-full bg-black px-7 text-[15px] font-medium text-white transition duration-300 hover:bg-white hover:text-black"
+                                >
+                                    Join Our Waitlist
+                                </button>
+                            </div>
+
+                            <!-- BOTTOM -->
+                            <div
+                                class="mt-16 flex flex-col gap-10 md:flex-row md:justify-between"
+                            >
+                                <!-- logo + socials -->
+                                <div>
+                                    <img
+                                        src="./images/Logo/Logo.png"
+                                        alt="KekeCruise"
+                                        class="w-[135px] h-auto"
+                                    />
+
+                                    <h4
+                                        class="mt-8 text-[15px] font-medium text-black"
+                                    >
+                                        Stay Connected
+                                    </h4>
+
+                                    <div class="mt-3 flex items-center gap-4">
+                                        <a
+                                            href="#"
+                                            aria-label="Facebook"
+                                            class="text-black transition duration-300 hover:text-white"
+                                        >
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                fill="currentColor"
+                                                class="h-[19px] w-[19px]"
+                                            >
+                                                <path
+                                                    d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"
+                                                />
+                                            </svg>
+                                        </a>
+
+                                        <a
+                                            href="#"
+                                            aria-label="Instagram"
+                                            class="text-black transition duration-300 hover:text-white"
+                                        >
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="2"
+                                                class="h-[20px] w-[20px]"
+                                            >
+                                                <rect
+                                                    x="3"
+                                                    y="3"
+                                                    width="18"
+                                                    height="18"
+                                                    rx="5"
+                                                />
+                                                <circle cx="12" cy="12" r="4" />
+                                                <circle
+                                                    cx="17.5"
+                                                    cy="6.5"
+                                                    r="1"
+                                                    fill="currentColor"
+                                                    stroke="none"
+                                                />
+                                            </svg>
+                                        </a>
+
+                                        <a
+                                            href="#"
+                                            aria-label="X"
+                                            class="text-black transition duration-300 hover:text-white"
+                                        >
+                                            <svg
+                                                viewBox="0 0 24 24"
+                                                fill="currentColor"
+                                                class="h-[17px] w-[17px]"
+                                            >
+                                                <path
+                                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- columns -->
+                                <div
+                                    class="grid grid-cols-2 gap-10 sm:flex sm:gap-10 lg:gap-12"
+                                >
+                                    <!-- contact -->
+                                    <div class="col-span-2">
+                                        <h4
+                                            class="text-[15px] font-medium text-black"
+                                        >
+                                            Contact Us
+                                        </h4>
+
+                                        <ul class="mt-4 flex flex-col gap-3">
+                                            <li>
+                                                <a
+                                                    href="tel:08165070331"
+                                                    class="flex items-center gap-3 text-[12px] text-black transition duration-300 hover:text-white"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 24 24"
+                                                        fill="currentColor"
+                                                        class="h-[17px] w-[17px] shrink-0"
+                                                    >
+                                                        <path
+                                                            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                                                        />
+                                                    </svg>
+                                                    08165070331
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    href="mailto:Contact@kekecruise.gmail.com"
+                                                    class="flex items-center gap-3 text-[12px] text-black transition duration-300 hover:text-white"
+                                                >
+                                                    <svg
+                                                        viewBox="0 0 24 24"
+                                                        fill="currentColor"
+                                                        class="h-[17px] w-[17px] shrink-0"
+                                                    >
+                                                        <path
+                                                            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
+                                                        />
+                                                    </svg>
+                                                    Contact@kekecruise.gmail.com
+                                                </a>
+                                            </li>
+
+                                            <li
+                                                class="flex items-center gap-3 text-[12px] text-black"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="currentColor"
+                                                    class="h-[17px] w-[17px] shrink-0"
+                                                >
+                                                    <path
+                                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"
+                                                    />
+                                                </svg>
+                                                Ilorin, Kwara State, Nigeria.
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- company info -->
+                                    <div>
+                                        <h4
+                                            class="whitespace-nowrap text-[15px] font-medium text-black"
+                                        >
+                                            Company Info
+                                        </h4>
+
+                                        <ul
+                                            class="mt-4 flex flex-col gap-[6px] text-[12px]"
+                                        >
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="text-black transition duration-300 hover:text-white"
+                                                    >Home</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="text-black transition duration-300 hover:text-white"
+                                                    >About Us</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="text-black transition duration-300 hover:text-white"
+                                                    >Our Service</a
+                                                >
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="text-black transition duration-300 hover:text-white"
+                                                    >Blog</a
+                                                >
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- theme -->
+                                    <div>
+                                        <h4
+                                            class="whitespace-nowrap text-[15px] font-medium text-black"
+                                        >
+                                            Switch Theme
+                                        </h4>
+
+                                        <button
+                                            id="themeToggle"
+                                            type="button"
+                                            aria-label="Switch theme"
+                                            aria-pressed="false"
+                                            class="mt-4 ml-4 flex h-[34px] w-[64px] items-center rounded-full border-2 border-black bg-[#F4F4F4] px-[3px]"
+                                        >
+                                            <span
+                                                id="themeKnob"
+                                                class="grid h-[26px] w-[26px] translate-x-[28px] place-items-center text-black transition-transform duration-300"
+                                            >
+                                                <svg
+                                                    viewBox="0 0 24 24"
+                                                    fill="currentColor"
+                                                    class="h-[20px] w-[20px]"
+                                                >
+                                                    <path
+                                                        d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                                                    />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- COPYRIGHT -->
+                    <div
+                        class="mt-10 flex flex-col items-center justify-center gap-3 text-center sm:flex-row sm:gap-8"
+                    >
+                        <p class="text-[14px] text-[#333]">
+                            All Right Reserved KekeCruise 2025
+                        </p>
+
+                        <a
+                            href="#"
+                            class="text-[12px] text-black underline underline-offset-2 transition duration-300 hover:text-[#FFAA00]"
+                        >
+                            Terms &amp; Policy
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>

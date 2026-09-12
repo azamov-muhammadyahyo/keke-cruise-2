@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+.container {
+    width: 100% !important;
+    max-width: 1280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    /* real saytlardagidek: telefonda 16px, katta ekranda 32px gacha moslashadi */
+    padding-left: clamp(16px, 4vw, 32px) !important;
+    padding-right: clamp(16px, 4vw, 32px) !important;
+    box-sizing: border-box;
+}
+/* blog slayderida scrollbar'ni yashirish */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 500px;
+}
+/* JS orqali qo'shiladigan naqsh rasmlari */
+.patterns > img {
+    position: absolute;
+    width: 110px;
+    height: auto;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 0;
+}
+/* Kontent naqsh ustida turishi uchun */
+.patterns > .container {
+    position: relative;
+    z-index: 10;
+}
+.newsLetterHero {
+    min-height: 166px;
+    background-image: url(./images/hero/hero.png);
+    background-repeat: repeat;
+    background-size: 60px auto;
+}
+.whyChoose {
+    position: relative;
+    overflow: hidden;
+    background-image: url("./images/four section/baground image people.jpg");
+    background-size: cover;
+    background-position: center 50%;
+}
+/* fotoni xiralashtiruvchi oq qatlam */
+.whyChoose::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(245, 245, 245, 0.92) 0%,
+        rgba(245, 245, 245, 0.7) 28%,
+        rgba(245, 245, 245, 0.55) 100%
+    );
+}
+/* fon ustidagi yengil naqsh */
+.whyChoose::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(./images/hero/hero-pattern.png);
+    background-repeat: repeat;
+    background-size: 120px auto;
+    opacity: 0.25;
+    pointer-events: none;
+}
+/* seven section — xira foni */
+.partnerCta {
+    position: relative;
+    overflow: hidden;
+    background-image: url("./images/four section/baground image people.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* fotoni xiralashtiruvchi */
+.partnerCta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(245, 245, 245, 0.9);
+    pointer-events: none;
+}
+
+/* ul animatsiya */
+.liBorder li {
+    position: relative;
+}
+
+.liBorder li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background: #ffaa00;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.35s ease;
+}
+.liBorder li:hover::after,
+.liBorder li:focus-within::after {
+    transform: scaleX(1);
+}
