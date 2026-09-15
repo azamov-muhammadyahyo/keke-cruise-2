@@ -5,12 +5,14 @@
     max-width: 1280px !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    /* real saytlardagidek: telefonda 16px, katta ekranda 32px gacha moslashadi */
+    /* ///////////////////////// */
+
     padding-left: clamp(16px, 4vw, 32px) !important;
     padding-right: clamp(16px, 4vw, 32px) !important;
     box-sizing: border-box;
 }
-/* blog slayderida scrollbar'ni yashirish */
+/* ///////////////////////// */
+
 .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -23,7 +25,8 @@
     overflow: hidden;
     min-height: 500px;
 }
-/* JS orqali qo'shiladigan naqsh rasmlari */
+/* ///////////////////////// */
+
 .patterns > img {
     position: absolute;
     width: 110px;
@@ -32,7 +35,8 @@
     pointer-events: none;
     z-index: 0;
 }
-/* Kontent naqsh ustida turishi uchun */
+/* ///////////////////////// */
+
 .patterns > .container {
     position: relative;
     z-index: 10;
@@ -50,7 +54,8 @@
     background-size: cover;
     background-position: center 50%;
 }
-/* fotoni xiralashtiruvchi oq qatlam */
+/* ///////////////////////// */
+
 .whyChoose::before {
     content: "";
     position: absolute;
@@ -62,7 +67,9 @@
         rgba(245, 245, 245, 0.55) 100%
     );
 }
-/* fon ustidagi yengil naqsh */
+
+/* ///////////////////////// */
+
 .whyChoose::after {
     content: "";
     position: absolute;
@@ -73,7 +80,9 @@
     opacity: 0.25;
     pointer-events: none;
 }
-/* seven section — xira foni */
+
+/* ////////////////////// */
+
 .partnerCta {
     position: relative;
     overflow: hidden;
@@ -81,7 +90,7 @@
     background-size: cover;
     background-position: center;
 }
-/* fotoni xiralashtiruvchi */
+/* ////////////////////// */
 .partnerCta::before {
     content: "";
     position: absolute;
@@ -90,7 +99,7 @@
     pointer-events: none;
 }
 
-/* ul animatsiya */
+/* /////////////////// */
 .liBorder li {
     position: relative;
 }
